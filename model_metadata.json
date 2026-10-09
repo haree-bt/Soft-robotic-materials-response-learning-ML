@@ -1,0 +1,25 @@
+{
+  "model_name": "Quadratic ridge",
+  "features": [
+    "pressure_kpa",
+    "displacement_fraction"
+  ],
+  "target": "pulling_force_sensor_counts",
+  "target_units": "raw sensor counts (not calibrated to newtons)",
+  "displacement_definition": "normalized 0\u20131 from the supplied position trajectory",
+  "training_rows": 37073,
+  "pressure_levels_kpa": [
+    0,
+    25,
+    50,
+    75,
+    100,
+    125,
+    150,
+    175,
+    200
+  ],
+  "evaluation": "leave-one-pressure-level-out; one full pressure level is held out per fold",
+  "selected_by": "lowest pooled RMSE across pressure-level folds",
+  "model_file": "soft_actuator_response_model.joblib"
+}
