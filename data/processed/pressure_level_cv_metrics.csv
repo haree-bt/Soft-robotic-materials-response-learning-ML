@@ -1,0 +1,5 @@
+model,evaluation,pressure_levels,rows,mae_sensor_counts,rmse_sensor_counts,r2
+Quadratic ridge,leave-one-pressure-level-out,9,37073,135.49512430538599,168.5556208019434,0.900547421022105
+Quadratic regression,leave-one-pressure-level-out,9,37073,135.51182452651926,168.5848575453712,0.9005129170204554
+Random forest,leave-one-pressure-level-out,9,37073,211.75668211956477,261.72318306927434,0.7602194468332265
+Linear regression,leave-one-pressure-level-out,9,37073,205.36633788487293,263.0811138275352,0.7577248258072873
